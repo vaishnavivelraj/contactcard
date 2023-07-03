@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.container{
+    width:80%;
+    margin:auto;
+    height:100vh;
+}
+#contact{
+    background-color:aqua;
+    background:url(image/img.jpg);
+    background-size:cover;
+}
+h1, .detail{
+    text-align:center;
+    padding:10px;
+}
+h2{
+	text-align:center;
+}
+.row{
+    width:100%;
+    display:flex;
+}
+.col{
+    width:50%;
+    padding:50px;
+}
+.card{
+    margin-left:15px;
+}
+.card .icon{
+    width:50px;
+    height:50px;
+    background:#ffff;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:22px;
+}
+.card .text{
+    display:flex;
+    font-weight:300;
+    font-size:16px;
+    
+    
+}
+.card .text h3{
+    font-weight:500;
+    color:blue;
+    padding:10px;
+}
+.card .text p{
+    font-weight:500;
+    padding:10px;
+}
+.contactform{
+    width:75%;
+    padding:20px;
+    background:#ffff;
+    margin-bottom:5px;
+   margin-left:10px;
+   border:1px solid #00bcd4;
+}
+.contactform h2{
+    font-size:30px;
+    color:#333;
+    font-weight:500;
+}
+.contactform .inputbox{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+.contactform .inputbox input,.contactform .inputbox textarea{
+    width:100%;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0px;
+    border:none;
+    border-bottom:2px solid #333;
+    outline:none;
+    resize:none;
+}
+span{
+    position:absolute;
+    left:0;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    pointer-events:none;
+    transition:0.5%;
+    color:#666;
+}
+.contactform .inputbox input:focus~span{
+    color:#e91e63;
+    font-size:12px;
+    transform:translate(-20px);
+}
+.contactform .inputbox textarea:focus~span{
+    color:#e91e63;
+    font-size:12px;
+    transform:translate(-20px);
+}
+.contactform .inputbox input[type="submit"]
+{
+    width:100px;
+    background:#00bcd4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    font-size:18px;
+}
+.icon:hover{
+    transform:scale(1.5);
+}
+#button{
+	margin:0px 95px;
+}h2:hover{
+	text-shadow:0px 0px 15px #00bcd4;
+}
+h1:hover{
+	font-size:20px;
+	transform:scale(1.5);
+}
